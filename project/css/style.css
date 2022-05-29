@@ -183,11 +183,11 @@ header #top-nav .top-nav_list ul li.top-nav_sign {
   padding: 0.3rem 1.3rem;
 }
 
-header #top-nav .top-nav_list ul li.top-nav_sign:not(:last-child) {
+header #top-nav .top-nav_list ul li.top-nav_sign.top-nav_sign_login {
   padding-left: 2.5rem;
 }
 
-header #top-nav .top-nav_list ul li.top-nav_sign:last-child {
+header #top-nav .top-nav_list ul li.top-nav_sign.top-nav_sign_reg {
   border-right: 0px solid grey;
   padding-right: 0;
 }
@@ -218,6 +218,7 @@ header #header-middle-block {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 
 header #header-middle-block .header-left-middle {
@@ -302,6 +303,7 @@ header #header-middle-block .header-right-middle {
 
 header #header-middle-block .header-right-middle img {
   width: 100%;
+  z-index: 10;
 }
 
 header #burger-menu {
@@ -363,6 +365,119 @@ header #burger-menu .burger-nav_back_btn {
   left: 2rem;
 }
 
+header .line {
+  min-width: 600px;
+  width: 50vw;
+  height: 7rem;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.068), transparent);
+  transform: rotate(-30deg);
+  position: absolute;
+  bottom: 4vh;
+  left: 9vw;
+  z-index: 1;
+}
+
+header .line2 {
+  bottom: 9vh;
+  left: 50vw;
+}
+
+content .second-block {
+  width: 100%;
+  min-height: auto;
+  background: #0D0D2B;
+  padding: 8rem 0;
+  position: relative;
+  width: 100%;
+}
+
+content .second-block .second-block_panel {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+content .second-block .second-block_panel div {
+  display: flex;
+}
+
+content .second-block .second-block_panel div .second-block_blocks_desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+content .second-block .second-block_panel div .second-block_blocks_desc p {
+  color: white;
+}
+
+content .second-block .second-block_panel div .second-block_blocks_desc p:first-child {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+content .second-block .second-block_panel div .second-block_blocks_desc p:last-child {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  letter-spacing: 1px;
+}
+
+content .second-block .second-block_middle_block {
+  margin-top: 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+content .second-block .second-block_middle_block .second-left-middle {
+  width: 50%;
+}
+
+content .second-block .second-block_middle_block .second-left-middle img {
+  width: 100%;
+}
+
+content .second-block .second-block_middle_block .second-right-middle {
+  width: 40%;
+}
+
+content .second-block .second-block_middle_block .second-right-middle h2 {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 700;
+  width: 100%;
+  line-height: 3.7rem;
+}
+
+content .second-block .second-block_middle_block .second-right-middle p {
+  color: white;
+  font-weight: 400;
+  line-height: 2rem;
+  width: 70%;
+  margin-top: 2rem;
+}
+
+content .second-block .second-block_middle_block .second-right-middle button {
+  color: white;
+  font-size: 1.1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 30px;
+  border: 2px solid #3671E9;
+  background: #3671E9;
+  margin: 3rem 0;
+  transition: background 0.4s ease-in-out;
+}
+
+content .second-block .second-block_middle_block .second-right-middle button:hover {
+  background: transparent;
+}
+
 @media screen and (max-width: 1170px) {
   .container {
     width: 992px;
@@ -401,10 +516,52 @@ header #burger-menu .burger-nav_back_btn {
     width: 100%;
     margin-bottom: 3rem;
   }
+
+  content .second-block {
+    padding: 3rem 0;
+  }
+
+  content .second-block .second-block_panel {
+    flex-direction: column;
+    padding-left: 6rem;
+    row-gap: 2rem;
+  }
+
+  content .second-block .second-block_middle_block {
+    flex-direction: column;
+    padding: 0 3rem;
+    row-gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  content .second-block .second-block_middle_block .second-left-middle {
+    width: 100%;
+  }
+
+  content .second-block .second-block_middle_block .second-right-middle {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 576px) {
   .container {
     width: 100%;
+    padding: 0 1rem;
+  }
+
+  content .second-block .second-block_panel {
+    padding-left: 3rem;
+  }
+
+  content .second-block .second-block_middle_block {
+    padding: 0 0rem;
+  }
+
+  content .second-block .second-block_middle_block .second-right-middle {
+    text-align: center;
+  }
+
+  content .second-block .second-block_middle_block .second-right-middle p {
+    margin: 2rem auto;
   }
 }
