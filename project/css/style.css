@@ -478,6 +478,122 @@ content .second-block .second-block_middle_block .second-right-middle button:hov
   background: transparent;
 }
 
+content .third-block {
+  background: #0D0D2B;
+  padding: 3rem 0;
+  padding-bottom: 15rem;
+}
+
+content .third-block .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+content .third-block .container h3 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+content .third-block .container p {
+  color: #E0E0E0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  text-align: center;
+}
+
+content .third-block .container .earn-eth {
+  position: absolute;
+  top: 8rem;
+  background: white;
+  width: 80%;
+  padding: 3rem 1rem;
+  border-radius: 10px;
+  margin: 4rem 0;
+  box-shadow: 0px 50px 150px rgba(13, 13, 43, 0.1843137255);
+}
+
+content .third-block .container .earn-eth .calculate-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+content .third-block .container .earn-eth .calculate-block input[type=text] {
+  font-size: 1.25rem;
+  color: Black;
+  width: 50%;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+content .third-block .container .earn-eth .calculate-block select {
+  font-size: 1.25rem;
+  color: Black;
+  width: 20%;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+content .third-block .container .earn-eth .calculate-block button {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: #3671E9;
+  border-radius: 30px;
+  padding: 1.2rem 1.7rem;
+  transition: background 0.4s ease-in-out;
+}
+
+content .third-block .container .earn-eth .calculate-block button:hover {
+  background: #2754af;
+}
+
+content .third-block .container .revenue-block {
+  padding: 3rem 2rem 0;
+  margin-top: 3rem;
+}
+
+content .third-block .container .revenue-block .estimated_blue {
+  color: #3671E9;
+  font-weight: 500;
+  padding-bottom: 1.5rem;
+}
+
+content .third-block .container .revenue-block .revenue_value {
+  color: #0D0D2B;
+  font-weight: 700;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+content .third-block .container .revenue-block .revenue_value .revenue-dollars {
+  color: #3671E9;
+}
+
+content .third-block .container .revenue-block .revenue-desc {
+  color: #828282;
+}
+
+content .fourth-block .container {
+  position: relative;
+  padding-top: 20rem;
+}
+
+content .fourth-block .container h3 {
+  color: #0D0D2B;
+  font-weight: 700;
+  font-size: 2.5rem;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 150%;
+  margin-bottom: 5rem;
+}
+
 @media screen and (max-width: 1170px) {
   .container {
     width: 992px;
@@ -541,6 +657,19 @@ content .second-block .second-block_middle_block .second-right-middle button:hov
   content .second-block .second-block_middle_block .second-right-middle {
     width: 100%;
   }
+
+  content .third-block .container .earn-eth {
+    padding: 2rem 0.5rem;
+  }
+
+  content .third-block .container .earn-eth .calculate-block {
+    padding: 0 0.5rem;
+  }
+
+  content .third-block .container .earn-eth .calculate-block input[type=text] {
+    width: 40%;
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -563,5 +692,18 @@ content .second-block .second-block_middle_block .second-right-middle button:hov
 
   content .second-block .second-block_middle_block .second-right-middle p {
     margin: 2rem auto;
+  }
+
+  content .third-block .container .earn-eth {
+    top: 12rem;
+  }
+
+  content .third-block .container .earn-eth .calculate-block select {
+    font-size: 1rem;
+  }
+
+  content .third-block .container .earn-eth .calculate-block button {
+    font-size: 1rem;
+    padding: 1rem 1.3rem;
   }
 }
